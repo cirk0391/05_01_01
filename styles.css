@@ -27,16 +27,58 @@ h1 {
   margin: 10px;
 }
 
-/* knap */
-.mode {
-  display: right;
-  background: hsl(298, 96%, 69%);
-  transition: 1s;
+/* -------------------tekst og portrætbillede------------------ */
+
+#second_section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 20px;
+  gap: 20px;
 }
 
-.mode:hover {
-  background: hsl(273, 65%, 42%);
+h2 {
+  font-family: "Fugaz One", cursive;
 }
+
+p {
+  font-family: "Noto Sans", sans-serif;
+  grid-column: 1;
+}
+
+/* -------------------videoer----------------------- */
+
+#third_section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 20px;
+  gap: 20px;
+}
+
+video {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+/* ------------------Galleri------------------ */
+
+#fouth_section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  margin: 20px;
+}
+
+#galleri {
+  margin: 20px;
+}
+
+/* ------------------footer------------- */
 
 footer {
   font-size: small;
